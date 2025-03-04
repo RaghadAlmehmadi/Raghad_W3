@@ -1,25 +1,14 @@
-<<<<<<< HEAD
+Kotlin Class Task
 Overview
-This is an Android application that demonstrates the activity lifecycle by logging lifecycle events (onCreate(), onStart(), onResume(), onPause(), and onDestroy()) in Logcat.
+This Kotlin program demonstrates basic language features, including variable declaration, collections, conditional statements, functions, and lambda expressions.
 Features
-Logs lifecycle events: onCreate(), onStart(), onResume(), onPause(), and onDestroy()
-Provides real-time logs in Logcat to track activity state changes
-Simple user interface to observe lifecycle behavior
-Lifecycle Events Logged
-onCreate() – The activity is being created for the first time
-onStart() – The activity is becoming visible to the user
-onResume() – The activity is now interactive and in the foreground
-onPause() – Another activity is coming to the foreground, partially covering this one
-onDestroy() – The activity is being destroyed and removed from memory.
-How to Run the App
-Open the project in Android Studio.
-Click "Run" to build and launch the app on an emulator or physical device.
-Open Logcat in Android Studio.
-Set the log level to "Debug."
-Filter logs by the tag "Lifecycle."
-The lifecycle logs should appear when interacting with the app.
-=======
-# Raghad_W3
-# Raghadweek3
->>>>>>> 65ab4ee (first commit)
-# Raghadweek3
+Declares and initializes variables of different types (String, Int, Double, Boolean).
+Works with immutable and mutable lists.
+Implements an if-else statement to check even numbers.
+Defines functions for addition and subtraction using both traditional and lambda expressions.
+How to Run
+Install Kotlin and set up an environment.
+Save the code in a file.
+Compile and run the program using Kotlin commands.
+the path: app/src/main/java/com/example/classtask/Main.kt
+<img width="1440" alt="outputday3" src="https://github.com/user-attachments/assets/5dda0ead-961e-4de6-a484-698ed832c7f5" />
