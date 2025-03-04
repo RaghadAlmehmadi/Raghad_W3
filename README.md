@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Overview
 This is an Android application that demonstrates the activity lifecycle by logging lifecycle events (onCreate(), onStart(), onResume(), onPause(), and onDestroy()) in Logcat.
 Features
@@ -17,3 +18,8 @@ Open Logcat in Android Studio.
 Set the log level to "Debug."
 Filter logs by the tag "Lifecycle."
 The lifecycle logs should appear when interacting with the app.
+=======
+# Raghad_W3
+# Raghadweek3
+>>>>>>> 65ab4ee (first commit)
+# Raghadweek3
