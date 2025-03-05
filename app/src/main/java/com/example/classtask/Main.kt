@@ -1,33 +1,53 @@
 package com.example.classtask
 fun main() {
-    val name: String = "Raghad"
-    val num: Int = 2
-    val num2 : Double = 4.0
-    val yes: Boolean = true
+    // object from class student
+    val student1 = student("Raghad", 23, 100, "A")
+    student1.displayInfo()
+    println("Scholarship Eligible: ${student1.isEligible()}")
 
-    println("Hello my name is $name")
+    // class data for Course information
+    val course1 = course(courseName= "Programming", courseCode= "101", credits= 4)
+    //toString()
+    println("Course information: $course1")
+    //copy()
+    val course2 = course1.copy()
+    println("Copied Course: $course2")
+    //hashCode()
+    println("HashCode of course1: ${course1.hashCode()}")
+    //equals()
+    println("course1 equals course2: ${course1 == course2}")
 
-    val animals = listOf("cat", "dog", "Lion")
-    println("arrays animals: $animals")
+    //enum class for DepartmentType
+    val department = DepartmentType.COMPUTER_SCIENCE
+    val currentCredits = 12
+    val courseCredits = 5
+    println("Department: $department\nMax Credits: ${department.maxCredits}\n" +
+            "Can register for course? ${department.canRegister(currentCredits, courseCredits)}")
+}
 
-    val numbers = mutableListOf(1, 2, 3, 4)
-    println("arrays number is\n$numbers")
-    numbers.add(5)
-    println("after adding number 5\n$numbers")
 
-//if-else expressions.
-    if (num%2==0){
-        println("the number is even")
-    }else{
-        println("the number is odd")
+// class person
+open class person {
+    var name: String
+    var age: Int
+    constructor(name: String, age: Int) {
+        this.name = name
+        this.age = age
     }
-    sum(5,10)
-    val ruslt = subtract(20,10)
-    println("the subtract using lambda expression is $ruslt")
+    open fun displayInfo(){
+        println("the name is $name,and age is $age")
+    }
 }
-
-fun sum (num: Int,num1: Int){
-    println("The summation is ${num + num1}")
+//interface ScholarshipEligible
+interface ScholarshipEligible{
+    fun isEligible(): Boolean
 }
-// a lambda expression
-val subtract: (Int,Int) -> Int = {x: Int, y: Int -> x-y}
+//subclass Student
+class student(name: String, age: Int,var studentId: Int , var grade: String ) : person(name, age),ScholarshipEligible{
+    override fun displayInfo() {
+        println("the name is $name,and age is $age, the grade is $grade, and the student ID $studentId ")
+    }
+    override fun isEligible(): Boolean {
+        return grade == "A" || grade == "B"
+    }
+}
