@@ -1,14 +1,25 @@
-Kotlin Class Task
-Overview
-This Kotlin program demonstrates basic language features, including variable declaration, collections, conditional statements, functions, and lambda expressions.
+Description
+This Kotlin project demonstrates basic OOP concepts like classes, inheritance, interfaces, data classes, enum classes, and functions. It simulates managing student and course data, including scholarship eligibility, course registration, and basic object operations such as toString(), copy(), hashCode(), and equals().
 Features
-Declares and initializes variables of different types (String, Int, Double, Boolean).
-Works with immutable and mutable lists.
-Implements an if-else statement to check even numbers.
-Defines functions for addition and subtraction using both traditional and lambda expressions.
-How to Run
-Install Kotlin and set up an environment.
-Save the code in a file.
-Compile and run the program using Kotlin commands.
-the path: app/src/main/java/com/example/classtask/Main.kt
-<img width="1440" alt="outputday3" src="https://github.com/user-attachments/assets/5dda0ead-961e-4de6-a484-698ed832c7f5" />
+Person Class: Represents a person with a name and age.
+Student Class: Inherits from Person, adds studentId and grade, and implements ScholarshipEligible interface.
+Course Class: Data class for course details (courseName, courseCode, credits).
+DepartmentType Enum: Represents departments with a max credit limit and method to check if a student can register based on credits.
+Technologies Used
+Kotlin: Programming language
+Android Studio: IDE
+Classes Overview
+Person: Holds name and age, with a method displayInfo().
+Student: Inherits Person, adds studentId and grade, implements isEligible() for scholarship eligibility.
+Course: Data class for course details (courseName, courseCode, credits), with default methods (toString(), copy(), hashCode(), equals()).
+DepartmentType: Enum with departments and a canRegister() method to check registration eligibility.
+Methods
+Student.displayInfo(): Displays student's name, age, grade, and ID.
+Student.isEligible(): Returns true if grade is "A" or "B".
+Course.toString(): Returns course details as a string.
+Course.copy(): Creates a copy of the course.
+Course.hashCode(): Returns hash code for the course.
+Course.equals(): Compares two course objects.
+DepartmentType.canRegister(): Checks if the student can register for a course based on credit limits.
+<img width="1440" alt="kotlin_oop" src="https://github.com/user-attachments/assets/fa896b09-34ce-44c1-a432-105d45859c88" />
+
