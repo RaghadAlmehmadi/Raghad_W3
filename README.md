@@ -1,25 +1,29 @@
-Description
-This Kotlin project demonstrates basic OOP concepts like classes, inheritance, interfaces, data classes, enum classes, and functions. It simulates managing student and course data, including scholarship eligibility, course registration, and basic object operations such as toString(), copy(), hashCode(), and equals().
+Project: Android Profile Screen
+This Android project demonstrates the use of Jetpack Compose for building a profile screen with interactive UI elements. The application displays a profile picture, name, major, and a follow button that toggles between "Follow" and "Following". It also counts and displays the number of followers.
 Features
-Person Class: Represents a person with a name and age.
-Student Class: Inherits from Person, adds studentId and grade, and implements ScholarshipEligible interface.
-Course Class: Data class for course details (courseName, courseCode, credits).
-DepartmentType Enum: Represents departments with a max credit limit and method to check if a student can register based on credits.
-Technologies Used
-Kotlin: Programming language
-Android Studio: IDE
-Classes Overview
-Person: Holds name and age, with a method displayInfo().
-Student: Inherits Person, adds studentId and grade, implements isEligible() for scholarship eligibility.
-Course: Data class for course details (courseName, courseCode, credits), with default methods (toString(), copy(), hashCode(), equals()).
-DepartmentType: Enum with departments and a canRegister() method to check registration eligibility.
-Methods
-Student.displayInfo(): Displays student's name, age, grade, and ID.
-Student.isEligible(): Returns true if grade is "A" or "B".
-Course.toString(): Returns course details as a string.
-Course.copy(): Creates a copy of the course.
-Course.hashCode(): Returns hash code for the course.
-Course.equals(): Compares two course objects.
-DepartmentType.canRegister(): Checks if the student can register for a course based on credit limits.
-<img width="1440" alt="kotlin_oop" src="https://github.com/user-attachments/assets/fa896b09-34ce-44c1-a432-105d45859c88" />
-
+•	Profile Section: Displays a profile picture, the user's name, and major.
+•	Follow Button: Allows users to toggle between "Follow" and "Following". The button's text changes based on the state.
+•	Followers Counter: Shows the number of followers, which can be updated by clicking the follow button.
+Components Used
+•	Jetpack Compose: The UI framework used to build the layout and manage state.
+•	Image: Display a profile picture using painterResource.
+•	Text: Used for displaying the user's name, major, and follower count.
+•	Button: A clickable button that toggles between "Follow" and "Following".
+•	State Management: The mutableStateOf is used to store the follower count and button state.
+UI Structure
+•	Profile Picture: An image centered in the layout.
+•	Text Information: Displays user details like name and major in a column format.
+•	Follow Button: A button that toggles between two states when clicked, updating the follower count.
+How It Works
+1.	When the app starts, the profile screen is displayed.
+2.	The user can click the "Follow" button to toggle the follow status.
+3.	The follower count is displayed and updates when the button is clicked.
+Dependencies
+•	Jetpack Compose: For building UI with composable functions.
+•	Material3: For material design components like buttons and text styling.
+How to Run
+1.	Clone or download the repository.
+2.	Open the project in Android Studio.
+3.	Ensure that you have the necessary SDKs and dependencies installed.
+4.	Run the app on an emulator or a physical Android device.
+   
