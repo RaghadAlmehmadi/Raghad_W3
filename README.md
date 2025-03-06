@@ -28,3 +28,7 @@ How to Run
 2.	Open the project in Android Studio.
 3.	Ensure that you have the necessary SDKs and dependencies installed.
 4.	Run the app on an emulator or a physical Android device.
+   
+<img width="1440" alt="Output_profile" src="https://github.com/user-attachments/assets/f74c963b-8d80-49d7-97b5-443f7d5edcd7" />
+
+
