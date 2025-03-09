@@ -30,7 +30,8 @@ To run this project locally:
 4. Run the app on an Android emulator or a physical device.
 
 ## Screenshots
-![Uploading Output_UI.png…]()
+<img width="1440" alt="Output_UI" src="https://github.com/user-attachments/assets/83678053-5253-4a98-8309-638993cb8015" />
+
 
 
 ## Figma UI Design
