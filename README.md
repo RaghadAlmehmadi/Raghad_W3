@@ -36,6 +36,7 @@ To run this project locally:
 
 ## Figma UI Design
 The UI design for this app is available on Figma.
+
 https://www.figma.com/proto/ajJJaUST23pHcNJHoyi6wj/Registration-UI-templates-(Sign-up%2FLog-in)-(Community)?node-id=1-13&p=f&t=pToEdZ6lxoivWRfj-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A13
 
 
@@ -43,8 +44,11 @@ https://www.figma.com/proto/ajJJaUST23pHcNJHoyi6wj/Registration-UI-templates-(Si
 
 ## How to Use
 1.Launch the app to view the login screen.
+
 2.Enter a username and password to log in.
+
 3.If you have forgotten your password, you can click the "Forgot Password?" link to reset it.
+
 4.Choose a social media platform (Facebook, Google, or Apple) to log in using the respective image buttons.
 
 ## App Structure
