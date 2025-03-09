@@ -1,34 +1,51 @@
-Project: Android Profile Screen
-This Android project demonstrates the use of Jetpack Compose for building a profile screen with interactive UI elements.
-The application displays a profile picture, name,bio, and a follow button that toggles between “Follow” and “Following”.
-It also counts and displays the number of followers.
-Features
-•	Profile Section: Displays a profile picture, the user’s name, and bio.
-•	Follow Button: Allows users to toggle between “Follow” and “Following”. The button’s text changes based on the state.
-•	Followers Counter: Shows the number of followers, which can be updated by clicking the follow button.
-Components Used
-•	Jetpack Compose: The UI framework used to build the layout and manage state.
-•	Image: Display a profile picture using painterResource.
-•	Text: Used for displaying the user’s name, bio, and follower count.
-•	Button: A clickable button that toggles between “Follow” and “Following”.
-•	State Management: The mutableStateOf is used to store the follower count and button state.
-UI Structure
-•	Profile Picture: An image centered in the layout.
-•	Text Information: Displays user details like name and bio in a column format.
-•	Follow Button: A button that toggles between two states when clicked, updating the follower count.
-How It Works
-1.	When the app starts, the profile screen is displayed.
-2.	The user can click the “Follow” button to toggle the follow status.
-3.	The follower count is displayed and updates when the button is clicked.
-Dependencies
-•	Jetpack Compose: For building UI with composable functions.
-•	Material3: For material design components like buttons and text styling.
-How to Run
-1.	Clone or download the repository.
-2.	Open the project in Android Studio.
-3.	Ensure that you have the necessary SDKs and dependencies installed.
-4.	Run the app on an emulator or a physical Android device.
-   
-<img width="1440" alt="Output_profile" src="https://github.com/user-attachments/assets/f74c963b-8d80-49d7-97b5-443f7d5edcd7" />
+# ClassTask Android App
+
+## Description
+
+ClassTask is an Android application built using **Jetpack Compose** that displays a login screen. The screen features fields for the username and password, a login button, and various social media login options (Facebook, Google, and Apple). The app incorporates a modern, responsive design with text styling, layout adjustments, and image resources.
+
+## Features
+
+- User login form with username and password input fields.
+- A login button with a custom color scheme.
+- Options to log in with Facebook, Google, or Apple accounts using corresponding image buttons.
+- "Forgot Password?" link with appropriate styling.
+- A clean, responsive layout designed with Jetpack Compose.
+- Customizable text appearance (font size, weight, color).
+
+## Technologies Used
+
+- **Jetpack Compose**: Android’s modern UI toolkit for building native UIs in a declarative way.
+- **Material3**: A set of UI components for Android apps that follow Material Design guidelines.
+- **Kotlin**: The programming language used for Android development.
+- **Android Studio**: The IDE used for building and testing the application.
+
+## Installation
+
+To run this project locally:
+
+1. Clone the repository to your local machine
+2. Open the project in Android Studio.
+3. Sync the project with Gradle to ensure all dependencies are downloaded.
+4. Run the app on an Android emulator or a physical device.
+
+## Screenshots
+![Uploading Output_UI.png…]()
 
 
+## Figma UI Design
+The UI design for this app is available on Figma.
+https://www.figma.com/proto/ajJJaUST23pHcNJHoyi6wj/Registration-UI-templates-(Sign-up%2FLog-in)-(Community)?node-id=1-13&p=f&t=pToEdZ6lxoivWRfj-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A13
+
+
+
+
+## How to Use
+1.Launch the app to view the login screen.
+2.Enter a username and password to log in.
+3.If you have forgotten your password, you can click the "Forgot Password?" link to reset it.
+4.Choose a social media platform (Facebook, Google, or Apple) to log in using the respective image buttons.
+
+## App Structure
+MainActivity: This is the entry point of the application. It sets up the login screen UI using Jetpack Compose.
+Greeting Composable: Displays the login form and other UI elements such as text fields, buttons, and social media login options.
